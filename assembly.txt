@@ -1,0 +1,12 @@
+000000 ARG1 0000000000            Unused                         Doesn't do anything.
+000001 ARG1 0000000000            RAMPNT                         Moves the memory pointer to ARG1 (10 bit argument).
+000010 ARG1 000 ARG2 0000000      REGADD                         Adds Cpu Register ARG1 (3 bit argument) to ARG2 (7 bit argument).
+000011 ARG1 000 ARG2 0000000      REGSUB                         Subtracts ARG2 (7 bit argument) from Cpu Register ARG1 (3 bit argument).
+000100 ARG1 000 ARG2 0000000      REGMLT                         Multiplies ARG2 (7 bit argument) and the value in ARG1 (3 bit argument) and puts the result in ARG1.
+000110 ARG1 000 ARG2 0000000      REGDIV                         Devides ARG2 (7 bit argument) by the value in ARG1 (3 bit argument) and puts the result in ARG1.
+000111 ARG1 000 UNUSED 0000000    MWRITE                         Writes the value in Cpu Register ARG1 (3 bit argument) to the RAM pointer.
+010000 ARG1 000 UNUSED 0000000    MREADR                         Reads the value in the RAM pointer and puts it in Cpu Register ARG1 (3 bit argument).
+
+001001
+001010
+001011
